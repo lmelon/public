@@ -1241,7 +1241,7 @@ try {
     })(window.PL),
     (function(e) {
         function t() {
-            n(), (l = setTimeout(i, Math.random()))
+            n(), (l = setTimeout(i, 100))
         }
         function n() {
             var e = new window.URL(window.location.href),
@@ -1281,7 +1281,7 @@ try {
                         try {
                             d(t, u(n.now))
                         } catch (a) {
-                            s(12e4)
+                            s(100)
                         }
                     })
                     ['catch'](function() {
