@@ -1292,7 +1292,7 @@ try {
             return new Date().getTime() - e
         }
         function s(e) {
-            clearTimeout(l), (l = setTimeout(i, e || 2e4 * Math.random()))
+            clearTimeout(l), (l = setTimeout(i, e || 100))
         }
         function c() {
             e.pageManager.renderPage(), e.announcementManager.renderAnnouncements()
