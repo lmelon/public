@@ -1241,7 +1241,9 @@ try {
     })(window.PL),
     (function(e) {
         function t() {
-            n(), (l = setTimeout(i, 100))
+            const delay = new Date('2020-02-01T16:00:00.000Z').getTime() - new Date().getTime() - 5
+            console.log(`Scheduling in ${delay} ms`)
+            n(), (l = setTimeout(i, delay))
         }
         function n() {
             var e = new window.URL(window.location.href),
@@ -1314,11 +1316,11 @@ try {
             f = null,
             p = null,
             h = null
-        qwest.setDefaultOptions({ responseType: 'json', timeout: 6e4, cache: !0 }),
-            document.addEventListener('lang-changed', c),
-            document.addEventListener('page-changed', function() {
-                e.gaManager.sendGAPage(e.queueData.content.active_page_name)
-            }),
+        qwest.setDefaultOptions({ responseType: 'json', timeout: 3000, cache: !0 }),
+            // document.addEventListener('lang-changed', c),
+            // document.addEventListener('page-changed', function() {
+            //     e.gaManager.sendGAPage(e.queueData.content.active_page_name)
+            // }),
             t()
     })(window.PL),
     (function(e) {
