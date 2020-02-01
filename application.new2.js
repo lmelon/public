@@ -1241,7 +1241,7 @@ try {
     })(window.PL),
     (function(e) {
         function t() {
-            const delay = new Date('2020-02-01T16:00:00.000Z').getTime() - new Date().getTime() - 5
+            const delay = 1000
             console.log(`Scheduling in ${delay} ms`)
             n(), (l = setTimeout(i, delay))
         }
@@ -1310,7 +1310,7 @@ try {
                         e.gaManager.sendGATiming(n, 'success'),
                         null === e.langManager.locale && e.langManager.setLocale(t.content.locale),
                         c(),
-                        s(t.refresh_seconds ? 1000 : 100)))
+                        s(t.refresh_seconds ? 100 : 100)))
         }
         var l = null,
             f = null,
