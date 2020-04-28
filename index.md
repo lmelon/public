@@ -2,4 +2,4 @@
 
 ## Promotional Popup
 
-- [No Popup]("/nopopup")
+- [No Popup](/nopopup)
