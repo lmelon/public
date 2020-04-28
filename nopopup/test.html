@@ -9,6 +9,17 @@
 <body>
     <h1>Test page without popup</h1>
 
+    <script>
+        function deleteAllCookies() {
+            
+            allCookies = document.cookie;
+            allCookies.forEach((cookie) => { return cookie.remove() })
+            
+        }
+    </script>
+    
+    <button onclick="deleteAllCookies()">Delete cookies</button>
+    
 </body>
 
 </html>
